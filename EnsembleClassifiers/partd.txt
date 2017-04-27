@@ -1,0 +1,30 @@
+Chwan-Hao Tung
+861052182
+ctung003
+CS229
+PS6
+Part D.
+
+1. Difference between bagging and boosting.
+	From part a and b, we can see that bagging has a lot of misclassifications and varies a lot from run to run due to the random
+	sampling. But there is no issue of overfitting. On the other hand, boosting produces very tight and compact classifications
+	and misclassifications goes away as we have more and more trees. As a result boosting appears to be very prone to overfitting
+	as we do down in depth.
+	
+	From part c, we can see that in general, boosting converges towards a lower error rate than bagging. Training error of boosting
+	converges towards zero while its testing error is still some distance away from zero. Therefore variance is still high at 1000
+	trees, but we can expect the gap between testing and training error to grow smaller. As for bagging,  we can see that the error
+	rate levels off very early after some number of rounds. Increasing the number of trees after some point does not affect error 
+	rate much.
+	
+	
+2. How the methods relate to the bias and variance of the underlying classifier.
+	Both bagging and boosting reduces variance as we increase the number of rounds. However bagging will not reduce bias beyond a 
+	certain point. On the other hand, boosting reduces bias as we increase the number of trees. 
+	
+	In addition, boosting will have overfitting issues as we increase the number of trees and depth. While bagging does not have 
+	significant overfitting issues. If anything, it might be underfitting.
+
+3. Testing and training error.
+	Bagging will have higher testing and training error than boosting in general. Boosting training error coverges towards zero while
+	bagging training error will mostly level off along with testing error at a certain number of trees.
